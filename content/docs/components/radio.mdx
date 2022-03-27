@@ -1,0 +1,162 @@
+---
+title: 'Radio'
+description: 'Radios are used when only one choice may be selected in a series of options.'
+url: https://nextui.org/docs/components/radio
+---
+
+# Radio
+
+Radios are used when only one choice may be selected in a series of options.
+
+```jsx
+import { Radio } from '@nextui-org/react';
+```
+
+<CarbonAd />
+
+<Spacer y={2} />
+
+<Playground
+  title="Default"
+  desc="You can change the state with `checked` prop"
+  files={radioContent.default_radio}
+/>
+
+<Playground
+  title="Disabled"
+  desc="Unusable and un-clickable `Radio`."
+  files={radioContent.disabled}
+/>
+
+<Playground
+  title="Sizes"
+  desc="Change the size of the entire `Radio` including `padding`, `font-size` and `border` with the `size` property."
+  files={radioContent.size}
+/>
+
+<Playground
+  title="Colors"
+  overflow="auto"
+  desc="You can change the color with `color` prop"
+  files={radioContent.color}
+/>
+
+<Playground
+  title="Text Colors"
+  overflow="auto"
+  desc="You can change the `Radio` text color with `textColor` prop"
+  files={radioContent.textColor}
+/>
+
+<Playground
+  title="Squared"
+  desc="You can change the full style to a squared `Radio` with the `squared` property."
+  files={radioContent.squared}
+/>
+
+<Playground
+  title="Description"
+  desc="You can add a description to the `Radio` with `Radio.Description` component"
+  files={radioContent.description}
+/>
+
+<Playground
+  title="Row"
+  overflow="auto"
+  desc="You can change the `Radio.Group` direction with `row` prop."
+  files={radioContent.row}
+/>
+
+<Spacer y={3} />
+
+### APIs
+
+<Spacer y={2} />
+
+#### Radio Props
+
+| Attribute          | Type                           | Accepted values                | Description                                                               | Default   |
+| ------------------ | ------------------------------ | ------------------------------ | ------------------------------------------------------------------------- | --------- |
+| **value**          | `string`                       | -                              | Unique ident value (in group)                                             | -         |
+| **color**          | `SimpleColors` `string`        | [SimpleColors](#simple-colors) | Change radio color                                                        | `primary` |
+| **size**           | `NormalSizes` `number`         | [NormalSizes](#normal-sizes)   | Radio size                                                                | `medium`  |
+| **textColor**      | `SimpleColors` `string`        | [SimpleColors](#simple-colors) | Change radio text color                                                   | `default` |
+| **checked**        | `boolean`                      | `true/false`                   | Selected or not (in single)                                               | `false`   |
+| **animated**       | `boolean`                      | `true/false`                   | Display radio animations                                                  | `true`    |
+| **squared**        | `boolean`                      | `true/false`                   | Squared radio                                                             | `false`   |
+| **disabled**       | `boolean`                      | `true/false`                   | Disable radio                                                             | `false`   |
+| **preventDefault** | `boolean`                      | `true/false`                   | Prevent default event on when is selected through the `Space, Enter` keys | `true`    |
+| **onChange**       | `(e: RadioEvent) => void       | -                              | The callback invoked when the checked state of the `Radio` changes.       | -         |
+| **id**             | `string`                       | -                              | Native id attr                                                            | -         |
+| **css**            | `Stitches.CSS`                 | -                              | Override Default CSS style                                                | -         |
+| **as**             | `keyof JSX.IntrinsicElements`  | -                              | Changes which tag component outputs                                       | `label`   |
+| ...                | `InputHTMLAttributes`          | `'id', 'className', ...`       | Native radio props                                                        | -         |
+
+<Spacer y={2} />
+
+#### Radio Group Props
+
+| Attribute        | Type                                       | Accepted values                | Description                            | Default         |
+| ---------------- | ------------------------------------------ | ------------------------------ | -------------------------------------- | --------------- |
+| **color**        | `SimpleColors` `string`                    | [SimpleColors](#simple-colors) | Change radio group color               | `primary`       |
+| **textColor**    | `SimpleColors` `string`                    | [SimpleColors](#simple-colors) | Change radio group text color          | `default`       |
+| **initialValue** | `string/number`                            | -                              | Initial radio group value              | -               |
+| **value**        | `string/number`                            | -                              | Selected child radio                   | -               |
+| **row**          | `boolean`                                  | `true/false`                   | Change the radio group direction       | `false`         |
+| **disabled**     | `boolean`                                  | `true/false`                   | Disable all radios                     | `false`         |
+| **size**         | `NormalSizes`                              | [NormalSizes](#normal-sizes)   | Size of all radios in the group        | `medium`        |
+| **onChange**     | `(e:`[RadioEvent](#radio-event)) `=> void` | -                              | Radio group event handler              | -               |
+| **css**          | `Stitches.CSS`                             | -                              | Override Default CSS style             | -               |
+| **as**           | `keyof JSX.IntrinsicElements`              | -                              | Changes which tag component outputs    | `div`           |
+| ...              | `InputHTMLAttributes`                      | `'id', 'className', ...`       | Native props                           | -               |
+
+<Spacer y={2} />
+
+#### Radio Desc Props
+
+| Attribute | Type             | Accepted values          | Description  | Default |
+| --------- | ---------------- | ------------------------ | ------------ | ------- |
+| ...       | `HTMLAttributes` | `'id', 'className', ...` | native props | -       |
+
+<Spacer y={2} />
+
+### Radio types
+
+<Spacer y={1} />
+
+#### Simple Colors
+
+```ts
+type SimpleColors =
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'warning'
+  | 'error';
+```
+
+#### Normal Sizes
+
+```ts
+type NormalSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+```
+
+#### Radio Event
+
+```ts
+interface RadioEvent {
+  target: RadioEventTarget;
+  stopPropagation: () => void;
+  preventDefault: () => void;
+  nativeEvent: React.ChangeEvent;
+}
+```
+
+#### Radio Event Target
+
+```ts
+interface RadioEventTarget {
+  checked: boolean;
+}
+```

@@ -1,0 +1,186 @@
+---
+title: 'Card'
+description: 'Card is a container for text, photos, and actions in the context of a single subject.'
+url: https://nextui.org/docs/components/card
+---
+
+# Card
+
+Card is a container for text, photos, and actions in the context of a single subject.
+
+```jsx
+import { Card } from '@nextui-org/react';
+```
+
+<CarbonAd />
+
+<Spacer y={2} />
+
+<Playground
+  title="Default"
+  desc="NextUI will wrap your content in a `Card.Body` component."
+  files={cardContent.defaultCard}
+/>
+
+<Playground
+  title="Bordered"
+  desc="You can change the full style to a bordered `Card` with the `bordered` property."
+  files={cardContent.bordered}
+/>
+
+<Playground
+  title="Hoverable"
+  desc="You can apply a fancy hover animation with the `hoverable` property."
+  files={cardContent.hover}
+/>
+
+<Playground
+  title="Clickable"
+  desc="You can use the `clickable` property to allow users to interact with the entirety of its surface
+  to trigger its main action, be it an expansion, a link to another screen or some other behavior."
+  files={cardContent.clickable}
+/>
+
+<Playground
+  title="Colors"
+  desc="You can change the color of the `Card` with the property `color`."
+  files={cardContent.color}
+/>
+
+<Playground
+  title="With divider"
+  desc="You can use the `Divider` component to split the `Card` sections."
+  files={cardContent.divider}
+/>
+
+<Playground
+  title="With Footer"
+  desc="You can use the `Card.Footer` component to add actions, details or another information to the `Card`."
+  files={cardContent.footer}
+/>
+
+<Playground
+  title="Cover Image"
+  desc="You can use the `cover` prop and `Card.Image` component to add a coverred image to the `Card.Body`. NextUI automatically
+  applies `object-fit: cover` to the inner image."
+  files={cardContent.cover}
+/>
+
+<Playground
+  title="Primary Action"
+  desc="You can use the `clickable` property to allow users to interact with the `Card`."
+  files={cardContent.action}
+/>
+
+<Spacer y={3} />
+
+### APIs
+
+<Spacer y={2} />
+
+#### Card Props
+
+| Attribute        | Type                                         | Accepted values                  | Description                                                                                                | Default   |
+| ---------------- | -------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
+| **color**        | `NormalColors`                               | [NormalColors](#normal-colors)   | Change card color                                                                                          | `default` |
+| **shadow**       | `boolean`                                    | `true/false`                     | Display shadow effect                                                                                      | `true`    |
+| **bordered**     | `boolean`                                    | `true/false`                     | Bordered card                                                                                              | `false`   |
+| **animated**     | `boolean`                                    | `true/false`                     | Display drip, shadow, hover and scale animation                                                            | `true`    |
+| **hoverable**    | `boolean`                                    | `true/false`                     | Display a translate and shadow animation on hover                                                          | `false`   |
+| **clickable**    | `boolean`                                    | `true/false`                     | Allow users to interact with the card                                                                      | `false`   |
+| **cover**        | `boolean`                                    | `true/false`                     | It removes the [Card.Body](#card.body-props) padding and set the property `object-fit: cover` to the image | `false`   |
+| **borderWeight** | `NormalWeights`                              | [NormalWeights](#normal-weights) | Border weight for `bordered` card                                                                          | `normal`  |
+| **onClick**      | `MouseEventHandler`                          | -                                | Clickable card click handler                                                                               | -         |
+| **ref**          | <Code>Ref<HTMLDivElement &#124; null></Code> | -                                | forwardRef                                                                                                 | -         |
+| **css**          | `Stitches.CSS`                               | -                                | Override Default CSS style                                                                                 | -         |
+| **as**           | `keyof JSX.IntrinsicElements`                | -                                | Changes which tag component outputs                                                                        | `div`     |
+| ...              | `HTMLAttributes`                             | `'id', 'className', ...`         | Native props                                                                                               | -         |
+
+<Spacer y={2} />
+
+#### Card.Header Props
+
+| Attribute | Type                          | Accepted values          | Description                         | Default |
+| --------- | ----------------------------- | ------------------------ | ----------------------------------- | ------- |
+| **css**   | `Stitches.CSS`                | -                        | Override Default CSS style          | -       |
+| **as**    | `keyof JSX.IntrinsicElements` | -                        | Changes which tag component outputs | `div`   |
+| ...       | `HTMLAttributes`              | `'id', 'className', ...` | Native props                        | -       |
+
+<Spacer y={2} />
+
+#### Card.Body Props
+
+| Attribute | Type                          | Accepted values          | Description                         | Default |
+| --------- | ----------------------------- | ------------------------ | ----------------------------------- | ------- |
+| ...       | `HTMLAttributes`              | `'id', 'className', ...` | Native props                        | -       |
+| **css**   | `Stitches.CSS`                | -                        | Override Default CSS style          | -       |
+| **as**    | `keyof JSX.IntrinsicElements` | -                        | Changes which tag component outputs | `div`   |
+
+<Spacer y={2} />
+
+#### Card.Footer Props
+
+| Attribute | Type                          | Accepted values          | Description                          | Default |
+| --------- | ----------------------------- | ------------------------ | ------------------------------------ | ------- |
+| **blur**  | `boolean`                     | `true/false`             | Makes the card footer container blur | `false` |
+| **css**   | `Stitches.CSS`                | -                        | Override Default CSS style           | -       |
+| **as**    | `keyof JSX.IntrinsicElements` | -                        | Changes which tag component outputs  | `div`   |
+| ...       | `HTMLAttributes`              | `'id', 'className', ...` | Native props                         | -       |
+
+<Spacer y={2} />
+
+#### Card.Image Props
+
+| Attribute        | Type                          | Accepted values                | Description                                       | Default      |
+| ---------------- | ----------------------------- | ------------------------------ | ------------------------------------------------- | ------------ |
+| **src**          | `string`                      | -                              | Image source                                      | -            |
+| **width**        | `string` `number`             | `%` `px` `rem` `em`            | Determine the width of the card image             | `100%`       |
+| **height**       | `string` `number`             | `%` `px` `rem` `em`            | Determine the height of the card image            | `auto`       |
+| **showSkeleton** | `boolean`                     | `true/false`                   | Show skeleton effect whereas the image is loading | `true`       |
+| **objectFit**    | `ObjectFit`                   | [ObjectFit](#object-fit)       | CSS "object-fit" property                         | `scale-down` |
+| **maxDelay(ms)** | `number`                      | -                              | Max duration of the skeleton animation            | `3000`       |
+| **autoResize**   | `boolean`                     | `true/false`                   | Enables zooming when width is too small           | `true`       |
+| **css**          | `Stitches.CSS`                | -                              | Override Default CSS style                        | -            |
+| **as**           | `keyof JSX.IntrinsicElements` | -                              | Changes which tag component outputs               | `div`        |
+| ...              | `ImgHTMLAttributes`           | `'id', 'className', 'alt' ...` | Native props                                      | -            |
+
+<Spacer y={2} />
+
+### Card types
+
+<Spacer y={1} />
+
+#### Normal Colors
+
+```ts
+type NormalColors =
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'warning'
+  | 'error'
+  | 'gradient';
+```
+
+#### Normal Weights
+
+```ts
+type NormalWeights = 'light' | 'normal' | 'bold' | 'extrabold' | 'black';
+```
+
+### Object Fit
+
+```ts
+type ObjectFit =
+  | 'contain'
+  | 'cover'
+  | 'fill'
+  | 'none'
+  | 'scale-down'
+  /* Global values */
+  | 'inherit'
+  | 'initial'
+  | 'revert'
+  | 'unset';
+```
