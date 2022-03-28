@@ -13,7 +13,7 @@ export interface HeaderProps {
 }
 
 const defaultProps = {
-  description: 'Make beautiful websites regardless of your design experience.',
+  description: 'Open-source resource for learning data structures & algorithms and their implementation in any programming language with flowchart and visualizer.',
   image: '/twitter-cards/nextui.jpeg'
 };
 
@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ title, description, image, url }) => {
   const { theme, isDark } = useTheme();
 
   let pageTitle = title ? `${toCapitalize(title)} | ` : '';
-  pageTitle += 'NextUI - Beautiful, fast and modern React UI Library';
+  pageTitle += 'AlgorithmsHub';
   return (
     <Head>
       <title>{pageTitle}</title>

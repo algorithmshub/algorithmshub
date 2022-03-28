@@ -61,7 +61,7 @@ const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
       }}
     >
       <NextUIProvider>
-        <PlausibleProvider domain="nextui.org" enabled={isProd}>
+        <PlausibleProvider domain="algorithmshub.github.io" enabled={isProd}>
           <KBarProvider
             actions={kbarActions}
             options={{

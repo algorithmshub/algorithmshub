@@ -111,9 +111,10 @@ const DocsLayout: React.FC<React.PropsWithChildren<Props>> = ({
                   </Link>
                 </NextLink>
               ) : (
-                <a href={editUrl} target="_blank" rel="noopener noreferrer">
-                  <small>Edit this page on GitHub</small>
-                </a>
+                // <a href={editUrl} target="_blank" rel="noopener noreferrer">
+                //   <small>Edit this page on GitHub</small>
+                // </a>
+                null
               )}
             </footer>
           </Col>

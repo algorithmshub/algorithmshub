@@ -35,49 +35,49 @@ async function redirect() {
     },
     {
       source: '/docs',
-      destination: '/docs/guide/getting-started',
-      permanent: true
-    },
-    {
-      source: '/docs/getting-started',
-      destination: '/docs/guide/getting-started',
-      permanent: true
-    },
-    {
-      source: '/guide',
-      destination: '/docs/guide/getting-started',
-      permanent: true
-    },
-    {
-      source: '/learn',
-      destination: '/docs/guide/getting-started',
-      permanent: true
-    },
-    {
-      source: '/theme',
-      destination: '/docs/theme/default-theme',
-      permanent: true
-    },
-    {
-      source: '/docs/theme',
-      destination: '/docs/theme/default-theme',
-      permanent: true
-    },
-    {
-      source: '/components/:path*',
-      permanent: true,
-      destination: '/docs/components/:path*'
-    },
-    {
-      source: '/docs/components',
-      destination: '/docs/components/button',
-      permanent: true
-    },
-    {
-      source: '/components',
-      destination: '/docs/components/button',
+      destination: '/docs/math/absolute',
       permanent: true
     }
+    // {
+    //   source: '/docs/getting-started',
+    //   destination: '/docs/guide/getting-started',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/guide',
+    //   destination: '/docs/guide/getting-started',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/learn',
+    //   destination: '/docs/guide/getting-started',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/theme',
+    //   destination: '/docs/theme/default-theme',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/docs/theme',
+    //   destination: '/docs/theme/default-theme',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/components/:path*',
+    //   permanent: true,
+    //   destination: '/docs/components/:path*'
+    // },
+    // {
+    //   source: '/docs/components',
+    //   destination: '/docs/components/button',
+    //   permanent: true
+    // },
+    // {
+    //   source: '/components',
+    //   destination: '/docs/components/button',
+    //   permanent: true
+    // }
   ];
 }
 
