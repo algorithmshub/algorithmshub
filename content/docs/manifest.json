@@ -18,6 +18,11 @@
               "title": "Absolute",
               "keywords": "absolute, algorithm",
               "path": "/docs/math/absolute.mdx"
+            },
+            {
+              "title": "AliquotSum",
+              "keywords": "aliquotsum, algorithm",
+              "path": "/docs/math/aliquot-sum.mdx"
             }
           ]
         }
