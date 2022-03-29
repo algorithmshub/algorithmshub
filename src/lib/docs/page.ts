@@ -45,7 +45,6 @@ export async function fetchRawDoc(doc: string, tag: string) {
 }
 
 export async function fetchDocsManifest(tag: string) {
-  return localManifest; // Bunlong
   if (!isProd) return localManifest;
 
   const res = await getRawFileFromRepo(

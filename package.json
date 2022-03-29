@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "deploy": "yarn build && yarn postbuild && vercel --prod",
     "deploy:stage": "yarn build && yarn postbuild && vercel",
