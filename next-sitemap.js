@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://nextui.org',
+  siteUrl: 'https://algorithmshub.github.io',
   generateRobotsTxt: true,
 };

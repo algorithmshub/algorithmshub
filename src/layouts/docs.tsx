@@ -10,8 +10,8 @@ import { Heading, getHeadings } from '@utils/get-headings';
 import { MetaProps } from '@lib/docs/meta';
 import Header from '@layouts/header';
 import { Fixed, PageNav } from '@components';
-import { REPO_NAME, GITHUB_URL } from '@lib/github/constants';
-import { TAG, CONTENT_PATH } from '@lib/docs/config';
+// import { REPO_NAME, GITHUB_URL } from '@lib/github/constants';
+// import { TAG, CONTENT_PATH } from '@lib/docs/config';
 import { StyledImg } from '@primitives';
 import { darkTheme } from '@theme/shared';
 import { appears } from '@utils/animations';
@@ -31,7 +31,7 @@ const DocsLayout: React.FC<React.PropsWithChildren<Props>> = ({
   routes,
   prevRoute,
   nextRoute,
-  currentRoute,
+  // currentRoute,
   tag,
   slug,
   meta
@@ -42,7 +42,7 @@ const DocsLayout: React.FC<React.PropsWithChildren<Props>> = ({
     setHeadings(getHeadings());
   }, [routes]);
 
-  const editUrl = `${GITHUB_URL}/${REPO_NAME}/edit/${TAG}/${CONTENT_PATH}${currentRoute?.path}`;
+  // const editUrl = `${GITHUB_URL}/${REPO_NAME}/edit/${TAG}/${CONTENT_PATH}${currentRoute?.path}`;
 
   return (
     <div id="app-container">

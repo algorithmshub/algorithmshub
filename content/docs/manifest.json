@@ -23,6 +23,16 @@
               "title": "AliquotSum",
               "keywords": "aliquotsum, algorithm",
               "path": "/docs/math/aliquot-sum.mdx"
+            },
+            {
+              "title": "DigitSum",
+              "keywords": "digitsum, algorithm",
+              "path": "/docs/math/digit-sum.mdx"
+            },
+            {
+              "title": "Factorial",
+              "keywords": "factorial, algorithm",
+              "path": "/docs/math/factorial.mdx"
             }
           ]
         }

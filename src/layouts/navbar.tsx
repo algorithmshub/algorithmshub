@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Logo,
+  // Logo,
   MenuToggle,
   Badge,
-  Twitter,
-  Discord,
-  Github,
+  // Twitter,
+  // Discord,
+  // Github,
   ThemeToggle
 } from '@components';
 import { Box } from '@primitives';
-import cn from 'classnames';
-import NextLink from 'next/link';
+// import cn from 'classnames';
+// import NextLink from 'next/link';
 import dynamic from 'next/dynamic';
-import { Row, Col, Spacer, Link, useBodyScroll } from '@nextui-org/react';
+import {
+  Row,
+  Col,
+  // Spacer,
+  // Link,
+  useBodyScroll
+} from '@nextui-org/react';
 import { Route } from '@lib/docs/page';
 import { Container } from '@nextui-org/react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { useMediaQuery } from '@hooks/use-media-query';
-import { isActive } from '@utils/links';
-import { includes } from 'lodash';
+// import { isActive } from '@utils/links';
+// import { includes } from 'lodash';
 import { StyledNavContainer, StyledNavMainContainer } from './styles';
 
 export interface Props {
@@ -34,16 +40,16 @@ const MobileNavigation = dynamic(
   }
 );
 
-const SearchInput = dynamic(
-  () => import('../components/search/instant-search'),
-  {
-    ssr: true
-  }
-);
+// const SearchInput = dynamic(
+//   () => import('../components/search/instant-search'),
+//   {
+//     ssr: true
+//   }
+// );
 
 const Navbar: React.FC<Props> = ({ isHome, hasNotify, routes }) => {
   const [expanded, setExpanded] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
   const isMobile = useMediaQuery(960);
   const [, setBodyHidden] = useBodyScroll(null, { scrollLayer: true });
   const [scrollPosition, setScrollPosition] = useState(
@@ -98,7 +104,7 @@ const Navbar: React.FC<Props> = ({ isHome, hasNotify, routes }) => {
             }}
           >
             <Row justify="flex-start" align="center">
-              <NextLink href="/">
+              {/* <NextLink href="/">
                 <Link href="/">
                   <Logo
                     auto
@@ -110,7 +116,7 @@ const Navbar: React.FC<Props> = ({ isHome, hasNotify, routes }) => {
                   />
                 </Link>
               </NextLink>
-              <Spacer x={0.4} />
+              <Spacer x={0.4} /> */}
               <Badge
                 css={{
                   px: '$4',
@@ -120,7 +126,7 @@ const Navbar: React.FC<Props> = ({ isHome, hasNotify, routes }) => {
                 }}
                 type="secondary"
               >
-                Beta
+                AlgorithmsHub 0.0.1
               </Badge>
             </Row>
           </Col>
