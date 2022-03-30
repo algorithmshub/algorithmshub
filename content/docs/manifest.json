@@ -71,6 +71,16 @@
               "title": "Alphabetical",
               "keywords": "alphabetical, algorithm",
               "path": "/docs/string/alphabetical.mdx"
+            },
+            {
+              "title": "Lower Case",
+              "keywords": "lower case, algorithm",
+              "path": "/docs/string/lower-case.mdx"
+            },
+            {
+              "title": "Opposite Case",
+              "keywords": "opposite-case, algorithm",
+              "path": "/docs/string/opposite-case.mdx"
             }
           ]
         }
