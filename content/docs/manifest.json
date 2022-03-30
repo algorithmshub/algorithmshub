@@ -33,6 +33,11 @@
               "title": "Factorial",
               "keywords": "factorial, algorithm",
               "path": "/docs/math/factorial.mdx"
+            },
+            {
+              "title": "FactorialRecursion",
+              "keywords": "factorialrecursion, algorithm",
+              "path": "/docs/math/factorial-recursion.mdx"
             }
           ]
         }
