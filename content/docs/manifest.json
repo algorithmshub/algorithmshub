@@ -9,7 +9,7 @@
       "heading": true,
       "routes": [
         {
-          "title": "Maths",
+          "title": "Math",
           "open": true,
           "keywords": "algorithmshub, algorithm",
           "icon": "/paper.svg",
@@ -51,8 +51,26 @@
             },
             {
               "title": "Min Absolute List",
-              "keywords": "Min Absolute List, algorithm",
+              "keywords": "min absolute list, algorithm",
               "path": "/docs/math/min-absolute-list.mdx"
+            }
+          ]
+        },
+        {
+          "title": "String",
+          "open": true,
+          "keywords": "algorithmshub, algorithm",
+          "icon": "/paper.svg",
+          "routes": [
+            {
+              "title": "All Characters Same",
+              "keywords": "all characters same, algorithm",
+              "path": "/docs/string/all-characters-same.mdx"
+            },
+            {
+              "title": "Alphabetical",
+              "keywords": "alphabetical, algorithm",
+              "path": "/docs/string/alphabetical.mdx"
             }
           ]
         }

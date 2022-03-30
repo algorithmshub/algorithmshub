@@ -1,0 +1,34 @@
+---
+title: Min Absolute List
+description: All Characters Same
+url: https://algorithmshub.github.io/docs/math/all-characters-same
+---
+
+# All Characters Same
+
+**Problem**
+
+Write a function to check if all the characters of a string are same.
+
+**Solution**
+
+```java
+public class AllCharactersSame {
+  public static void main(String[] args) {
+    System.out.println(isAllCharactersSame(""));
+    System.out.println(!isAllCharactersSame("aab"));
+    System.out.println(isAllCharactersSame("bbb"));
+    System.out.println(isAllCharactersSame("111"));
+  }
+
+  public static boolean isAllCharactersSame(String str) {
+    for (int i = 1, length = str.length(); i < length; ++i) {
+      if (str.charAt(i) != str.charAt(0)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+}
+```
