@@ -20,13 +20,13 @@
               "path": "/docs/math/absolute.mdx"
             },
             {
-              "title": "AliquotSum",
-              "keywords": "aliquotsum, algorithm",
+              "title": "Aliquot Sum",
+              "keywords": "aliquot sum, algorithm",
               "path": "/docs/math/aliquot-sum.mdx"
             },
             {
-              "title": "DigitSum",
-              "keywords": "digitsum, algorithm",
+              "title": "Digit Sum",
+              "keywords": "digit sum, algorithm",
               "path": "/docs/math/digit-sum.mdx"
             },
             {
@@ -35,9 +35,24 @@
               "path": "/docs/math/factorial.mdx"
             },
             {
-              "title": "FactorialRecursion",
-              "keywords": "factorialrecursion, algorithm",
+              "title": "Factorial Recursion",
+              "keywords": "factorial recursion, algorithm",
               "path": "/docs/math/factorial-recursion.mdx"
+            },
+            {
+              "title": "Max Absolute List",
+              "keywords": "max absolute list, algorithm",
+              "path": "/docs/math/max-absolute-list.mdx"
+            },
+            {
+              "title": "Max List",
+              "keywords": "max list, algorithm",
+              "path": "/docs/math/max-list.mdx"
+            },
+            {
+              "title": "Min Absolute List",
+              "keywords": "Min Absolute List, algorithm",
+              "path": "/docs/math/min-absolute-list.mdx"
             }
           ]
         }
