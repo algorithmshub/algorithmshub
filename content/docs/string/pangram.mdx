@@ -1,0 +1,46 @@
+---
+title: Pangram
+description: Pangram
+url: https://algorithmshub.github.io/docs/string/pangram
+---
+
+# Pangram
+
+**What is Pangram?**
+
+Pangram is a sentence using every letter of a given alphabet at least once.
+
+**Problem**
+
+Write a function to check if a string is a pangram string or not.
+
+**Solution**
+
+```java
+public class Pangram {
+  public static void main(String[] args) {
+    System.out.println(isPangram("abcdefghijklmnopqrstuvwxyz"));
+    System.out.println(isPangram("abcdefghijklmnopqrstuvwxy"));
+  }
+
+  public static boolean isPangram(String str) {
+    boolean[] marked = new boolean[26];
+    char[] values = str.toCharArray();
+
+    for (char value: values) {
+      if (Character.isLetter(value)) {
+        int index = Character.isUpperCase(value) ? value - 'A' : value - 'a';
+        marked[index] = true;
+      }
+    }
+
+    for (boolean b: marked) {
+      if (!b) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+}
+```

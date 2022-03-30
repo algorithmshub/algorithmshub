@@ -81,6 +81,11 @@
               "title": "Opposite Case",
               "keywords": "opposite-case, algorithm",
               "path": "/docs/string/opposite-case.mdx"
+            },
+            {
+              "title": "Pangram",
+              "keywords": "pangram, algorithm",
+              "path": "/docs/string/pangram.mdx"
             }
           ]
         }
