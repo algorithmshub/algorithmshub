@@ -86,6 +86,16 @@
               "title": "Pangram",
               "keywords": "pangram, algorithm",
               "path": "/docs/string/pangram.mdx"
+            },
+            {
+              "title": "Reverse String",
+              "keywords": "reverse string, algorithm",
+              "path": "/docs/string/reverse-string.mdx"
+            },
+            {
+              "title": "Upper Case",
+              "keywords": "upper case, algorithm",
+              "path": "/docs/string/upper-case.mdx"
             }
           ]
         }
